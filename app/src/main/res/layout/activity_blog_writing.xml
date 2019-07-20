@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/blogTitle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter blog title here"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/contentImage"
+                        android:foregroundGravity="center"
+                        android:layout_gravity="center"
+                        android:background="#C7C6C6"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp" />
+
+                </LinearLayout>
+                
+                <EditText
+                    android:id="@+id/contentText"
+                    android:textSize="15sp"
+                    android:hint="Enter text here..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#C7C6C6"
+                    android:background="@drawable/roundedrectangle"
+                    android:text=" Post "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
